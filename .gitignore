@@ -1,46 +1,55 @@
-# Python
+# Python & Virtual Environments
 __pycache__/
 *.py[cod]
 *.egg-info/
 .venv/
 venv/
 env/
+.pytest_cache/
+.coverage
 
-# Environment and secrets
+# Environment & Secrets
 .env
 .env.*
 !.env.example
 *.pem
 *.key
+*.cert
+credentials.json
 
-# Node
+# Node & Web
 node_modules/
 dist/
 build/
 .next/
+.vite/
+npm-debug.log*
 
-# Datasets and geospatial artifacts
- data/raw/
-data/processed/
+# Datasets & Geospatial Rasters
+data/
 *.tif
 *.tiff
 *.jp2
 *.vrt
 *.gpkg
-*.shp
-*.shx
-*.dbf
-*.prj
-*.cpg
+*.geojson
+*.tar.gz
+*.zip
 
-# Model checkpoints
-models/checkpoints/
+# Model Checkpoints & Weights
+models/
 *.pt
 *.pth
 *.safetensors
 *.onnx
+*.bin
+*.ckpt
 
-# Tooling
+# Generated Outputs & Cache
+outputs/
+*.log
+
+# Editors & OS
 .vscode/
 .idea/
 .DS_Store
