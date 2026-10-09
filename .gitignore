@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Node
+node_modules/
+dist/
+build/
+.next/
+
+# Datasets and geospatial artifacts
+ data/raw/
+data/processed/
+*.tif
+*.tiff
+*.jp2
+*.vrt
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+
+# Model checkpoints
+models/checkpoints/
+*.pt
+*.pth
+*.safetensors
+*.onnx
+
+# Tooling
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
